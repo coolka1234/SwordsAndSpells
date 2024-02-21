@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC098BD4-C26D-4C14-BDD6-4EAB2F885D45}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GraRPG</RootNamespace>
+    <AssemblyName>GraRPG</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cAbility.cs" />
+    <Compile Include="cArena.cs" />
+    <Compile Include="cConsumable.cs" />
+    <Compile Include="cEnemy.cs" />
+    <Compile Include="cEntity.cs" />
+    <Compile Include="cEquipment.cs" />
+    <Compile Include="cItem.cs" />
+    <Compile Include="cPlayer.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sEnemy.cs" />
+    <Compile Include="sPlayer.cs" />
+    <Compile Include="sProgressBar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\207-2076277_head-skull-fictional-character-skeleton-icon-game-art.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\fireball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Lightning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Healing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Barricade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mage_Armor_full.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-human-006-512.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1639846098-magicalpotions450706webinar-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Potion-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\207-2076277_head-skull-fictional-character-skeleton-icon-game-art-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-enemy-png-image-with-no-background-pngkeycom-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizard-cropped-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss-video-game-minecraft-golem-enemy-png-favpng-XNqBhHxEyQqW81R2Wzndx8MCv-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyborg-94210267-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-european-and-american-style-halloween-vampire-png-image_2826758-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled 10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pobrane-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lightning-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireball-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Healing-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled 17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\68b4863f08f0354204db64c2ed5f2671-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\685f7459b688a82ac7c1750dea17fc42-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9d99756e48d6ccfe31236ef6c2318d66-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ea0a00b74bb7b9f83cacd0c400ae759d-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48bb1e9dae037f63afdd95cd6232ddfa-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\af5a2388cf88e505acaa3d0bc8730c25-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b877b3872db9e844c2d9942a396e277c-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28a14f4167a06f16549a6856434539df-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f44887e9b7b68f8cd8d8ed8929ae3c2c-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\af5a2388cf88e505acaa3d0bc8730c25-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honey_Elixir_Potion__Anh_Dang-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_no_title_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2007659e3bc27affa1df4d36823aa079-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30ba9ba8f231b0964756838eb76b61ae-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_name__Nick_Zhur-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\68f611e19d81acf84e1def2fe7a8f698-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fd348f6e34de99822b579b0710865752-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eea322799b893be494cd537707f425eb-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b49bedcf05a3146658647dca36a4256b-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ad2920a75121ad45496aaf1675d93a42-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\235d9f89dc6320ccce76e42059841d06-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fef48489a1dfb6bcc5968abb093bc236-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d2201f25f1b949b5b8af7c6ade15f96c-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b64c755af38469ee820365d50fb95e2b-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccd229a88d4e0fe7775e2c8fefcd403d-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f37f088c7f53e7b60eb845d1711baaf1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6546b842638f1d59c851339acd01cbaf-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\106c8a51113e463651c217fd93dc742c-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220919658e87c78f4c5c820c4f517869-removebg-preview.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
